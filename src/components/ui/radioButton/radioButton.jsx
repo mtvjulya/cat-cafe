@@ -19,6 +19,7 @@ function RadioButton({
   const isChecked = value === selectValue;
 
   return (
+    <>
     <Label>
       <VisuallyHiddenInput
         value={value}
@@ -30,6 +31,7 @@ function RadioButton({
       />
       <LabelComponent $isChecked={isChecked}>{text}</LabelComponent>
     </Label>
+    </>
   );
 }
 
